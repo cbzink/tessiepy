@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "tessiepy",
-    version = "0.0.1",
+    version = "0.0.2",
     description = "A Python API for Tessie",
     url = "https://github.com/cbzink/tessiepy",
     license = "MIT",

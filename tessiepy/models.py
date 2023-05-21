@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+
 @dataclass
 class TessieVehicle:
     """Dataclass for TessieVehicle."""
@@ -15,6 +16,8 @@ class TessieVehicle:
     drive_state: DriveState
     vehicle_config: VehicleConfig
     vehicle_state: VehicleState
+    climate_state: ClimateState
+
 
 @dataclass
 class ChargeState:
@@ -28,6 +31,7 @@ class ChargeState:
     charge_port_latch: str
     charging_state: str
 
+
 @dataclass
 class DriveState:
     """Dataclass for DriveState."""
@@ -35,11 +39,13 @@ class DriveState:
     latitude: float
     longitude: float
 
+
 @dataclass
 class VehicleConfig:
     """Dataclass for VehicleConfig."""
 
     car_type: str
+
 
 @dataclass
 class VehicleState:
@@ -47,3 +53,10 @@ class VehicleState:
 
     car_version: str
     vehicle_name: str
+
+
+@dataclass
+class ClimateState:
+    """Dataclass for ClimateState."""
+    inside_temp: float
+    outside_temp: float

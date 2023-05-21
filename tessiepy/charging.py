@@ -1,5 +1,6 @@
 """Charging APIs for Tessie."""
 
+
 class Charging:
     """Charging class."""
 

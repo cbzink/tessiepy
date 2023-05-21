@@ -15,7 +15,7 @@ class TessieClient:
     """Tessie client."""
 
     def __init__(self, access_token: str, session: ClientSession | None = None) -> None:
-        """Initialize Sensibo Client.
+        """Initialize Tessie Client.
 
         access_token: Access token from Tessie.
         session: aiohttp.ClientSession or None to create a new session.
