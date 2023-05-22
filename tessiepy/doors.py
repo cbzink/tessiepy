@@ -2,7 +2,7 @@
 
 
 class Doors:
-    """Charging class."""
+    """Doors class."""
 
     def __init__(self, client) -> None:
         """Initialize the class."""
