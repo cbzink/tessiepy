@@ -2,6 +2,7 @@
 
 from typing import Any
 
+
 class TessieError(Exception):
     """Error from Tessie API."""
 
@@ -9,6 +10,7 @@ class TessieError(Exception):
         """Initialize the exception."""
 
         Exception.__init__(self, *args)
+
 
 class AuthenticationError(Exception):
     """Authentication error from Tessie API."""
