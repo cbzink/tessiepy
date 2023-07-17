@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tessiepy",
-    version="0.0.2",
+    version="0.0.3",
     description="A Python API for Tessie",
     url="https://github.com/cbzink/tessiepy",
     license="MIT",
@@ -18,4 +18,5 @@ setup(
     author="Charles Zink",
     author_email="charleszink@gmail.com",
     packages=find_packages(include=["tessiepy"]),
+    py_modules=["tessiepy"],
 )

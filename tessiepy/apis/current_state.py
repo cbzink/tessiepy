@@ -29,7 +29,7 @@ class CurrentState:
 
         return results
 
-    async def vehicles(self, only_active: bool = False) -> dict:
+    async def vehicles(self, only_active: bool = False) -> dict[str, dict]:
         """Get all vehicles and their latest state.
 
         This call always returns a complete set of data and doesn't impact vehicle sleep. If the vehicle is awake, the data is usually less than 10 seconds old. If the vehicle is asleep, the data is from the time the vehicle went to sleep.
@@ -43,7 +43,12 @@ class CurrentState:
 
         results = await self.client.http_get("vehicles", params)
 
-        return results["results"]
+        response = {}
+
+        for vehicle in results["results"]:
+            response[vehicle["vin"]] = vehicle
+
+        return response
 
     async def location(self, vin: str) -> LocationData:
         """Get the coordinates, street address and associated saved location of the vehicle.
