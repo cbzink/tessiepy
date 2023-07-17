@@ -2,8 +2,24 @@
 
 Python wrapper for the [Tessie](https://tessie.com) API.
 
-## Project Info
+## Usage
 
-This project is incomplete and unlikely to be finished or released. I'm using it as part of my [Home Assistant](https://www.home-assistant.io/) home automation system, and only included the functionality I specifically needed.
+Initialize `TessieClient` with your Tessie API key. All<sup>*</sup> Tessie API endpoints are supported, and organized according to the Tessie API docuemntation.
 
-If you're interested in a fully fledged TessiePy, or fully fledged Tessie integration for HomeAssistant, open an issue or email me at charleszink@gmail.com - I would be happy to work on it with someone!
+```py
+from tessiepy import TessieClient
+
+client = TessieClient("YOUR_API_KEY")
+
+client.lights.flash()
+```
+
+<sup>* The `/vin/map` endpoint is not supported as it returns image/png data.</sup>
+
+## Disclaimer
+
+I only own a Model 3, so some features exclusive to other Tesla models such as Biohazard Mode and sunroof opening/closing have not been tested. If you own one of these vehicles and are able to confirm they work correctly, please open an issue!
+
+## License
+
+Licensed under the [MIT License](LICENSE.md).
