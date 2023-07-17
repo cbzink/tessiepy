@@ -1,6 +1,6 @@
 """Idles APIs for Tessie."""
 
-from tessiepy.models import IdleData
+from .models import IdleData
 
 
 class Idles:

@@ -1,6 +1,6 @@
 """Charges APIs for Tessie."""
 
-from tessiepy.models import ChargeData
+from .models import ChargeData
 
 
 class Charges:

@@ -1,6 +1,6 @@
 """Battery Health APIs for Tessie."""
 
-from tessiepy.models import BatteryHealthData
+from .models import BatteryHealthData
 
 
 class BatteryHealth:

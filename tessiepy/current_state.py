@@ -1,6 +1,6 @@
 """Current State APIs for Tessie."""
 
-from tessiepy.models import LocationData, WeatherData
+from .models import LocationData, WeatherData
 
 
 class CurrentState:

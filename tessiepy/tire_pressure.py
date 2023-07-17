@@ -1,6 +1,6 @@
 """Tire Pressure APIs for Tessie."""
 
-from tessiepy.models import TirePressureData
+from .models import TirePressureData
 
 
 class TirePressure:

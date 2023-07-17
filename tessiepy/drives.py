@@ -1,6 +1,6 @@
 """Drives APIs for Tessie."""
 
-from tessiepy.models import DriveData
+from .models import DriveData
 
 
 class Drives:

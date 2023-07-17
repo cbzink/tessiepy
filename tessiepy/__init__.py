@@ -5,30 +5,30 @@ import json
 from typing import Any
 from aiohttp import ClientSession, ClientResponse
 
-from tessiepy.apis.current_state import CurrentState
-from tessiepy.apis.drives import Drives
-from tessiepy.apis.charges import Charges
-from tessiepy.apis.idles import Idles
-from tessiepy.apis.battery_health import BatteryHealth
-from tessiepy.apis.tire_pressure import TirePressure
-from tessiepy.apis.status import Status
-from tessiepy.apis.wake import Wake
-from tessiepy.apis.doors import Doors
-from tessiepy.apis.trunks import Trunks
-from tessiepy.apis.windows import Windows
-from tessiepy.apis.climate import Climate
-from tessiepy.apis.charging import Charging
-from tessiepy.apis.lights import Lights
-from tessiepy.apis.horn import Horn
-from tessiepy.apis.homelink import HomeLink
-from tessiepy.apis.keyless_driving import KeylessDriving
-from tessiepy.apis.sunroof import Sunroof
-from tessiepy.apis.sentry_mode import SentryMode
-from tessiepy.apis.valet_mode import ValetMode
-from tessiepy.apis.software import Software
-from tessiepy.apis.scheduling import Scheduling
-from tessiepy.apis.share import Share
-from tessiepy.apis.boombox import Boombox
+from .current_state import CurrentState
+from .drives import Drives
+from .charges import Charges
+from .idles import Idles
+from .battery_health import BatteryHealth
+from .tire_pressure import TirePressure
+from .status import Status
+from .wake import Wake
+from .doors import Doors
+from .trunks import Trunks
+from .windows import Windows
+from .climate import Climate
+from .charging import Charging
+from .lights import Lights
+from .horn import Horn
+from .homelink import HomeLink
+from .keyless_driving import KeylessDriving
+from .sunroof import Sunroof
+from .sentry_mode import SentryMode
+from .valet_mode import ValetMode
+from .software import Software
+from .scheduling import Scheduling
+from .share import Share
+from .boombox import Boombox
 
 from .exceptions import AuthenticationError, TessieError
 
